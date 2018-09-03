@@ -1,0 +1,119 @@
+body {
+	background-color: #cecece;
+	margin: 0;
+	font-family: "Heebo";
+}
+
+#menu {
+	height: 100%;
+	padding-bottom: 100%;
+	margin: 0;
+	text-align: center;
+	line-height: 2px;
+	background-color: white;
+}
+
+#kolorMenu {
+	font-family: "Fredoka One";
+	letter-spacing: 2px;
+	padding-top: 18%;
+	font-size: 7rem;
+	line-height: 100px;
+	margin: 0;
+}
+
+.circle {
+	width: 30%;
+	/*padding bottom acts as height since .circle has no contents*/
+	padding-bottom: 30%;
+	background: purple;
+	float: left;
+	margin: 1.66%;
+	border-radius: 50%;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+
+}
+
+#circleContainer {
+	max-width: 720px;
+	margin: 30px auto;
+}
+
+.selected {
+	background-color: #3FB54F;
+	color: white;
+}
+
+#kolorTitle {
+	font-family: "Fredoka One";
+	font-size: 3rem;
+	letter-spacing: 2px;
+	text-align: center;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+}
+
+#mainTitle {
+	background-color: #3FB54F;
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	line-height: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+}
+
+#colorDisplay {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 5rem;
+	letter-spacing: 1px;
+}
+
+#toolbar {
+	background-color: #ebebeb;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	font-weight: 700;
+	color: #3FB54F;
+}
+
+#statusDisplay {
+	font-size: 1.2rem;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+}
+
+
+button {
+	border: none;
+	background: none;
+	height: 100%;
+	font-size: inherit;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #3FB54F;
+	transition: all 0.6s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+}
+
+button:hover {
+	background-color: #3FB54F;
+	color: white;
+}
+
+#statusDisplay {
+	display: inline-block;
+	width: 20%;
+}
+
