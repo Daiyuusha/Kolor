@@ -4,6 +4,8 @@ var colors = randomColorGenerator(numCircles);
 var pickedColor = pickColor();
 
 // Selectors
+
+// *Circles
 var circles = document.querySelectorAll(".circle")
 
 // *RGB color to guess
@@ -23,13 +25,17 @@ var modeButtons = document.querySelectorAll(".mode");
 var mainTitle = document.querySelector("#mainTitle");
 var kolorTitle = document.querySelector("#kolorTitle");
 var menu = document.querySelector("#menu");
+var kolorBody = document.querySelector("#kolorBody");
+var body = document.querySelector("body");
+var randomContinue = true;
+
 
 
 
 // THIS IS EVERYTHING
 mode();
 button();
-setInterval(kolorChange, 1000);
+setInterval(kolorChange, 2500);
 // THIS IS EVERYTHING
 
 
@@ -136,13 +142,24 @@ function button() {
 
 // *Continuous color change
 function kolorChange() {
-	kolorTitle.style.color = randomColor();
-	statusDisplay.style.color = kolorTitle.style.color;
-	menu.style.backgroundColor = kolorTitle.style.color;
-	menu.style.transition = "all 1s";
+		kolorTitle.style.color = randomColor();
+		statusDisplay.style.color = kolorTitle.style.color;
+		menu.style.backgroundColor = kolorTitle.style.color;
+		menu.style.transition = "all 2.5s";
+
+	if(randomContinue === true) {
+		body.style.backgroundColor = kolorTitle.style.color;
+		body.style.transition = "all 2.5s"
+	}
+	else {
+			body.style.backgroundColor = "#c3c3c3"
+	}
 }
 
 // *Menu
 menu.addEventListener("click", function() {
 	this.style.display = "none";
+	kolorBody.style.visibility = "visible";
+	randomContinue = false;
+
 })
